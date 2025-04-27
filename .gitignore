@@ -173,8 +173,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-
-./data/compustat.csv
-./data/compustat_raw.csv
-
 *.DS_Store
