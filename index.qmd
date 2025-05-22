@@ -2,7 +2,7 @@
 title: "Has slower business dynamism been associated with slower productivity growth for US sectors?"
 author: "47773"
 abstract: |
-    This paper examines the relationship between declining business dynamism and productivity growth in U.S. sectors, exploring why these trends have diverged over the past 30 years. Business dynamism has traditionally been seen as a key driver of productivity growth through the mechanism of creative destruction, so understanding why this relationship has weakened is essential. The paper analyses long-term trends in dynamism, productivity, and innovation, estimates firm-level markups and productivity, and performs a panel regression. The results suggest that productivity growth has not declined in parallel with business dynamism, likely due to increased market power and R&D investment enabling incumbents to 'creatively destroy' themselves.
+    This paper examines the relationship between declining business dynamism and productivity growth in US sectors, exploring why these trends have diverged over the past 30 years. Business dynamism has traditionally been seen as a key driver of productivity growth through the mechanism of creative destruction, so understanding why this relationship has weakened is essential. The paper analyses long-term trends in dynamism, productivity, and innovation, estimates firm-level markups and productivity, and performs a panel regression. The results suggest that productivity growth has not declined in parallel with business dynamism, likely due to increased market power and R&D investment enabling incumbents to 'creatively destroy' themselves.
 format: 
     # typst:
     #     papersize: a4
