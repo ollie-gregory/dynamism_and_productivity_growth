@@ -3,6 +3,7 @@ import pandas as pd
 import statsmodels.api as sm
 from scipy import stats
 
+# This class estimates productivity using a GMM approach based on the method described in the paper by Ackerberg, Caves, and Frazer (2015).
 class ProductivityEstimator:
     def __init__(self, df, id_col='company_id', year_col='year', 
                  output_col='sale', capital_col='ppent', 
@@ -62,11 +63,12 @@ class ProductivityEstimator:
             self.alpha_l = max(0.05, min(0.7, results.params['l']))
             self.alpha_m = max(0.05, min(0.7, results.params['m']))
 
+            # this is just for debugging purposes
             if verbose:
                 print(f"Initial parameters from OLS: alpha_k={self.alpha_k:.4f}, alpha_l={self.alpha_l:.4f}, alpha_m={self.alpha_m:.4f}")
 
         except Exception as e:
-            print(f"Error in parameter initialization: {e}")
+            print(f"Error in parameter initialisation: {e}")
             print("Using default parameter values.")
             self.alpha_k = 0.3
             self.alpha_l = 0.4
@@ -156,7 +158,7 @@ class ProductivityEstimator:
         constraints = {'type': 'eq', 'fun': constraint}
 
         try:
-            # Minimize GMM objective function
+            # Minimise GMM objective function
             from scipy.optimize import minimize
             result = minimize(gmm_objective, x0, method='SLSQP', 
                               bounds=bounds, constraints=constraints)
@@ -180,7 +182,7 @@ class ProductivityEstimator:
 
                 return param_changes, correlations
             else:
-                print(f"GMM optimization failed: {result.message}")
+                print(f"GMM optimisation failed: {result.message}")
                 return 0, self._check_moment_conditions()
 
         except Exception as e:
@@ -189,7 +191,7 @@ class ProductivityEstimator:
     
     def estimate(self, verbose=True, use_gmm=True):
 
-        # Initialize variables to track iterations
+        # Initialise variables to track iterations
         iterations = 0
         converged = False
 
@@ -228,6 +230,7 @@ class ProductivityEstimator:
             }
             results_history.append(iter_results)
 
+            # more debugging stuff (this was a really hard class to write...)
             if verbose and (iterations % 5 == 0 or iterations < 5):
                 print(f"Iteration {iterations+1}:")
                 print(f"  Parameters: alpha_k={self.alpha_k:.4f}, alpha_l={self.alpha_l:.4f}, alpha_m={self.alpha_m:.4f}, rho={self.rho:.4f}")
@@ -249,6 +252,7 @@ class ProductivityEstimator:
         # Final calculation of productivity
         self._calculate_productivity()
 
+        # final debugging stuff
         if verbose:
             if converged:
                 print(f"Converged after {iterations} iterations.")

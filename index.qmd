@@ -78,7 +78,7 @@ Economic theory suggests a strong link between productivity growth and business 
 
 However, this relationship is not guaranteed. It may also be the case that incumbent firms remain more productive than new entrants, especially if they continue to invest in innovation and efficiency improvements. In such cases, productivity growth might not depend on firm turnover. Furthermore, other factors could explain a decline in dynamism. Increased regulation may raise barriers to entry, reducing the flow of new firms into markets. Greater industry concentration and market power among incumbents could also stifle competition, for example, through predatory pricing or strategic acquisitions, without necessarily causing a fall in productivity.
 
-![Creative destruction vs productivity growth.](./figs/fig1.png){#fig-dynamism width=100%}
+![Creative destruction vs productivity growth. [@bls2024] [@bds2024]](./figs/fig1.png){#fig-dynamism width=100%}
 
 @fig-dynamism helps illustrate these trends. The left panel shows the job reallocation rate alongside its five-year moving average. It reveals a clear decline in dynamism in the US over the past 30 years, with a particularly steep drop following the 2008 financial crisis. In contrast, the right panel shows total factor productivity (TFP) growth, which is more volatile. Its five-year moving average shows a slight upward trend in the early 2000s, followed by a decline after 2008. While the patterns of TFP growth and business dynamism might appear to have some alignment, it is not clear at this point whether there is a relationship. To explore the relationship more, a panel regression can be used, controlling for both sector and time effects, along with (normalised) output.
 
@@ -105,13 +105,13 @@ A similar pattern that has emerged over the last 30 years in the US has been a s
 
 Using the methods for productivity and markup estimation outlined in @ackerberg2015, and @deloecker2020, this paper examines markup trends from the early 1990s to 2021. The results support the broader findings that markups have been rising steadily across the distribution, with especially sharp increases among the most dominant firms. As @fig-dispersion illustrates, firms in the 95th percentile of the markup distribution saw their markups grow from approximately 2.5 times marginal cost in 1992 to over 4.5 times by 2021. This significant dispersion suggests that a small number of high-markup firms are pulling away from the rest, possibly reinforcing their market dominance.
 
-![Increasing productivity and markup dispersion.](./figs/fig2.png){#fig-dispersion width=100%}
+![Increasing productivity and markup dispersion. [@compustat2024]](./figs/fig2.png){#fig-dispersion width=100%}
 
 Rising markups translate into higher firm profitability, which, according to Schumpeterian growth theory [@aghion1992], plays a key role in driving innovation. Profitable firms have a greater financial capacity to invest in R&D and also a stronger incentive to do so, as innovation helps them maintain or extend their lead in concentrated markets. Leading firms may therefore reinvest their profits to defend their competitive position and create higher barriers to entry.
 
 This theoretical link is reflected in the empirical data. @fig-rnd shows consistent year-on-year increases in real R&D spending in the US, alongside a rising number of US originated patents being filed. While causality is complex, the co-movement of rising markups, market concentration, and innovation inputs suggests that the accumulation of market power may be enabling, rather than stifling, innovation -- at least among incumbent firms.
 
-![Growing real R&D spending and patent filings.](./figs/fig3.png){#fig-rnd width=75%}
+![Growing real R&D spending and patent filings. [@fred2024] [@patents2024]](./figs/fig3.png){#fig-rnd width=75%}
 
 ### Productivity Dispersion
 
