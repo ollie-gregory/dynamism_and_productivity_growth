@@ -1,6 +1,6 @@
 # Has slower business dynamism been associated with slower productivity growth for U.S. sectors?
 
-In short the answer is no. In long, the answer is not really, but I guess it has for some. What I mostly focus on here though is the potential reasons why slower business dynamism has not been associated with slower productivity growth.
+In short the answer is no. In long, the answer is not really, but I guess it has for some. What I mostly focus on here though is the potential reasons why slower business dynamism has not been associated with slower productivity growth. To read the full report, check out the [index.html](https://ollie-gregory.github.io/dynamism_and_productivity_growth/) file in this repository. You can also view the PDF version of the report [here](index.pdf).
 
 ## Repository structure
 
